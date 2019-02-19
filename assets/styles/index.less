@@ -1,0 +1,102 @@
+@bacecolor:rgb(250, 76, 76);
+.navTop{
+    margin-bottom: 0;
+    border-radius: 0;
+    .phone1{
+        display: inline-block;
+        margin-bottom: 0;
+        text-align: center;
+        line-height: 25px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: @bacecolor;
+        span{
+            color: #fff;
+        }
+    }
+}
+.navMain{
+    height: 80px;
+    border: none;
+    background: #fff;
+    .container{
+        height: 100%;
+        .navbar-header{
+            height: 100%;
+        }
+        .navbar-form{
+            height: 100%;
+            margin: 0;
+            line-height: 80px;
+            .btn-default{
+                background: @bacecolor;
+                margin-top: 24px;
+                color: #fff;
+                border: 1px solid @bacecolor;
+                border-radius: 0px;
+                outline: none;
+            }
+            .form-control{
+                width: 400px;
+                border: 1px solid @bacecolor;
+                border-radius: 0;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+.navMainTwo{
+    font-size: 16px;
+    background: @bacecolor;
+    border: none;
+    .navbar-nav>li>a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+            background:rgb(241, 100, 100);
+        }
+    }
+
+}
+// 页脚
+footer{
+    background: rgb(37, 37, 37);
+    color: #fff;
+    padding: 30px;
+    p{
+        margin:5px 0;
+        width: 100%;
+    }
+    .weixin{
+        span{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            background: url("../../assets/imgs/jinling.png") 0px -838px;
+        }
+    }
+    .xinlang{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+            width: 40px;
+            margin-right: 10px;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+}
+.personal{
+    margin-top: 20px;
+    #menu{
+        .list-group-item.active{
+            background: rgb(241, 100, 100);
+            border-color: rgb(241, 100, 100);
+        }
+    }
+}

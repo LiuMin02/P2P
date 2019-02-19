@@ -1,0 +1,218 @@
+@bacecolor:rgb(250, 76, 76);
+.carousel-inner>.item>img{
+    height: 300px;
+}
+.container{
+    // 单个介绍div
+    .singleIntroduce{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin:20px 0;
+        // 背景图
+        span{
+            display: inline-block;
+            height: 80px;
+            width: 98px;
+        }
+        p{
+            color: #999;
+        }
+    }
+    // 设置背景图
+    .singleIntroduce:nth-of-type(1){
+        span{
+            background: url("../../assets/imgs/jinling.png")no-repeat -400px -567px;
+        }
+    }
+    .singleIntroduce:nth-of-type(2){
+        span{
+            background: url("../../assets/imgs/jinling.png")no-repeat -700px -567px;
+        }
+    }
+    .singleIntroduce:nth-of-type(3){
+        span{
+            background: url("../../assets/imgs/jinling.png")no-repeat -1000px -567px;
+        }
+    }
+    .singleIntroduce:nth-of-type(4){
+        span{
+            background: url("../../assets/imgs/jinling.png")no-repeat -1300px -567px;
+        }
+    }
+    // 进行中的借款
+    .title3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: @bacecolor;
+        border-bottom: 1px solid rgb(236, 236, 236);
+        margin: 20px 0;
+        h3{
+            margin: 0;
+            padding: 5px 0;
+            border-bottom: 4px solid @bacecolor;
+        }
+        p{
+            margin: 0;
+            a{
+                text-decoration: none;
+                color: @bacecolor;
+            }
+        }
+    }
+    .borrowList{
+        margin-bottom: 0;
+    }
+    .imgL{
+        display: block;
+        width: 100%;
+        height: 360px;
+        background: url("../../assets/imgs/jinling.png") -634px 0px;
+    }
+    .welfare{
+        display: flex;
+        flex-direction: column;
+        .welfareTop{
+           .welfareTopL{
+               height: 191px;
+               display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            h5{
+                font-size: 16px;
+                 .fish_detail{
+                     display: inline-block;
+                     width: 17px;
+                     height: 17px;
+                     line-height: 17px;
+                     margin-right: 5px;
+                     position: relative;
+                     top: 3px;
+                     background: url('../../assets/imgs/fish_logo.png');
+                 }
+                 a{
+                     color: rgb(77, 75, 75);
+                     text-decoration: none;
+                 }
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                flex-flow: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                color: #999;
+                li:nth-of-type(1) .newer_time{
+                    font-size: 40px;
+                    color: #f66;
+                    margin-bottom: 0;
+                }
+                .newer_time{
+                    font-size: 26px;
+                    color: #000;
+                    margin: 9px 0;
+                }
+            }
+           }
+           .welfareTopR{
+               a{
+                    display: inline-block;
+                    width: 296px;
+                    height: 191px;
+                    background: url("../../assets/imgs/jinling.png") 0 -1014px;
+               }
+           }
+        }
+        .welfareBottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 15px;
+            a{
+                display: inline-block;
+                width: 335px;
+                height: 149px;
+                margin-left: 15px;
+                &:nth-of-type(1){
+                    background: url("../../assets/imgs/jinling.png") -853px 0px;
+                }
+                &:nth-of-type(2){
+                    background: url("../../assets/imgs/jinling.png") -1220px 0px;
+                }
+                &:nth-of-type(3){
+                    background: url("../../assets/imgs/jinling.png") 0px -1233px;
+                }
+            }
+        }
+    }
+    .newsMediaL{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li{
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            span{
+                display: inline-block;
+                width: 240px;
+                height: 125px;
+            }
+            h6{
+                font-size: 14px;
+                margin: 5px 0;
+            }
+            p{
+                font-size: 14px;
+            }
+            article{
+                max-height: 40px;
+                overflow: hidden;
+                color: #a0a0a0;
+            }
+            &:nth-of-type(1){
+                span{
+                    background: url("../../assets/imgs/jinling.png") -634px -180px;
+                }
+            }
+            &:nth-of-type(2){
+                span{
+                    background: url("../../assets/imgs/jinling.png") -408px 0px;
+                }
+            }
+            &:nth-of-type(3){
+                span{
+                    background: url("../../assets/imgs/jinling.png") -408px -358px;
+                }
+            }
+        }
+    }
+    .newsMediaR{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        li{
+            font-size: 16px;
+            margin-bottom: 26px;
+            a{
+                text-decoration: none;
+                color: #888;
+                span{
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+}
+

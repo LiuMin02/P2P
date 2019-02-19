@@ -1,0 +1,51 @@
+.container .boorowBox {
+  background: #F4F8FA;
+  padding: 20px 0;
+}
+.container .boorowBox > p {
+  font-size: 24px;
+  color: #09d;
+}
+.container .boorowBox > div p {
+  display: inline-block;
+  margin-right: 30px;
+}
+.container .boorowBox > div p span {
+  color: #f35151;
+}
+.container h4 {
+  font-size: 16px;
+  margin: 20px 0;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.container h4 span {
+  display: inline-block;
+  height: 22px;
+  width: 60px;
+  text-align: center;
+  margin-left: 5px;
+  line-height: 22px;
+  background: #fa4c4c;
+  border-radius: 5px;
+  color: #fff;
+}
+.container .borrow-info .borrow-charge {
+  width: 200px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 2px #bebebe;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.container .borrow-info .borrow-charge h5 {
+  font-size: 16px;
+  color: #1b1a1a;
+}
+.container .borrow-info .borrow-charge p {
+  color: #31708f;
+}
+.container .borrow-info .borrow-charge p span {
+  color: #1d1c1c;
+  margin-left: 5px;
+}

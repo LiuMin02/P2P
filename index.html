@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>司马钱-银行存管平台</title>
+    <!-- 引入bs css -->
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 引入页面样式 -->
+    <link rel="stylesheet" href="dist/css/index.css">
+</head>
+
+<body>
+    <header>
+        <!-- 顶部导航 -->
+        <nav class="navbar navbar-inverse navTop navUn">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            <span>客服热线：400-8055-855（接听时间：工作日9:00～18:30）</span>
+                        </a>
+                    </div> -->
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <p class="phone1"><span class="glyphicon glyphicon-earphone"></span></p>
+                            <span>客服热线：400-8055-855（接听时间：工作日9:00～18:30）</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">好贷客户端下载</a>
+                        </li>
+                        <li>
+                            <a href="#"><span id="usname"></span></a>
+                        </li>
+                        <li>
+                            <a href="#">充值中心</a>
+                        </li>
+                        <li id="zhuxiao">
+                            <a href="login.html">注销</a>
+                        </li>
+                        <li>
+                            <a href="#" id="contact">联系客服</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- 主导航1 -->
+        <nav class="navbar navbar-default navTop navMain">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="assets/imgs/logoNew.png">
+                    </a>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group pull-left">
+                    <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default pull-left">搜索</button>
+                </form>
+            </div>
+        </nav>
+        <!-- 主导航2 -->
+        <nav class="navbar navbar-default navTop navMainTwo">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="navPrimary">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#invest">我要投资</a></li>
+                        <li><a href="#borrow">我要借款</a></li>
+                        <li><a href="#personal">个人中心</a></li>
+                        <li><a href="#guide">新手指引</a></li>
+                        <li><a href="#us">关于我们</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+<!-- 内容 -->
+    <section id="content">
+        
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-8">
+                        <p>京ICP备16067961号 CreditEase @ 2018</p>
+                        <p>宜人金融信息服务（北京）有限公司</p>
+                        <p>网贷有风险 出借需谨慎</p>
+                        <p>最终收益以实际为准 风险由出借人自行承担</p>
+                        <p>电  话： 028-86261949  / 400-808-6840  邮箱： wangye@itsource.cn</p>
+                        <p>蜀ICP备14030149号-1  蜀公网安备510114990541</p>
+                    
+                    </div>
+                    <div class="col-md-2">
+                        官方微博：
+                        <p class="xinlang">
+                            <img src="./assets/imgs/icon_xinlang.svg">
+                            <span>新浪微博</span>
+                        </p>
+                        <p class="xinlang">
+                            <img src="./assets/imgs/腾讯微博1.svg">
+                            <span>新浪微博</span>
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        官方微信：
+                        <div class="weixin">
+                            <span></span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 引入bs js -->
+    <script src="lib/jquery-1.12.4.min.js"></script>
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

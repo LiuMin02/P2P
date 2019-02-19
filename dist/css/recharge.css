@@ -1,0 +1,19 @@
+.borrowPro {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #bebebe;
+  padding: 0;
+}
+.borrowPro h4 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 10px;
+  background: #f5f3f3;
+}
+.borrowPro .title-list {
+  background: #f5f3f3;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

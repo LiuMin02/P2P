@@ -1,0 +1,95 @@
+.navTop {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navTop .phone1 {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 25px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #fa4c4c;
+}
+.navTop .phone1 span {
+  color: #fff;
+}
+.navMain {
+  height: 80px;
+  border: none;
+  background: #fff;
+}
+.navMain .container {
+  height: 100%;
+}
+.navMain .container .navbar-header {
+  height: 100%;
+}
+.navMain .container .navbar-form {
+  height: 100%;
+  margin: 0;
+  line-height: 80px;
+}
+.navMain .container .navbar-form .btn-default {
+  background: #fa4c4c;
+  margin-top: 24px;
+  color: #fff;
+  border: 1px solid #fa4c4c;
+  border-radius: 0px;
+  outline: none;
+}
+.navMain .container .navbar-form .form-control {
+  width: 400px;
+  border: 1px solid #fa4c4c;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+.navMainTwo {
+  font-size: 16px;
+  background: #fa4c4c;
+  border: none;
+}
+.navMainTwo .navbar-nav > li > a {
+  color: #fff;
+}
+.navMainTwo .navbar-nav > li > a:hover {
+  color: #fff;
+  background: #f16464;
+}
+footer {
+  background: #252525;
+  color: #fff;
+  padding: 30px;
+}
+footer p {
+  margin: 5px 0;
+  width: 100%;
+}
+footer .weixin span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  background: url("../../assets/imgs/jinling.png") 0px -838px;
+}
+footer .xinlang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .xinlang img {
+  width: 40px;
+  margin-right: 10px;
+}
+footer .xinlang span {
+  font-size: 18px;
+}
+.personal {
+  margin-top: 20px;
+}
+.personal #menu .list-group-item.active {
+  background: #f16464;
+  border-color: #f16464;
+}

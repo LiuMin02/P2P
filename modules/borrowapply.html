@@ -1,0 +1,107 @@
+
+<link rel="stylesheet" href="../dist/css/borrowapply.css">
+<div class="container">
+    <div class="boorowBox">
+        <p><span id="borrowType">---</span>借款</p>
+        <div>
+            <p>授信额度：<span class="momey">---</span></p>
+            <p>可借金额：<span class="momey">---</span></p>
+        </div>
+    </div>
+    <h4>借款信息<span>信用标</span></h4>
+    <div class="borrow-info row">
+        <form class="form-horizontal col-sm-8" action="http://172.16.4.241:80/borrowinfo.php" method="GET">
+            <div class="form-group">
+                <label for="borrow1" class="col-sm-2 control-label">借款金额</label>
+                <div class="input-group col-sm-8">
+                    <input name="borrowmoney" type="text" class="form-control" id="borrow1" aria-describedby="inputGroupSuccess3Status">
+                    <span class="input-group-addon">元</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="borrow2" class="col-sm-2 control-label">借款利息</label>
+                <div class="input-group col-sm-8">
+                    <input name="interest" type="text" class="form-control" id="borrow2" aria-describedby="inputGroupSuccess3Status">
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">借款期限</label>
+                <div class="input-group col-sm-8">
+                        <select class="form-control" name="borrowtime" id="borrow3">
+                            <option>1</option>
+                            <option>3</option>
+                            <option>6</option>
+                            <option>12</option>
+                            <option>24</option>
+                        </select>
+                    <span class="input-group-addon">月</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="borrow4" class="col-sm-2 control-label">还款方式</label>
+                <div class="input-group col-sm-8">
+                    <label class="radio-inline">
+                        <input name="repaytype" type="radio" id="borrow4" value="0" checked>按月分期
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="repaytype" id="inlineRadio2" value="1">按月到期
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                    <label for="borrow5" class="col-sm-2 control-label">最小投标</label>
+                    <div class="input-group col-sm-8">
+                        <input name="minbid" type="text" class="form-control" id="borrow5" aria-describedby="inputGroupSuccess3Status">
+                        <span class="input-group-addon">元</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="borrow6" class="col-sm-2 control-label">投标奖金</label>
+                    <div class="input-group col-sm-8">
+                        <input type="text" class="form-control" aria-describedby="inputGroupSuccess3Status">
+                        <span class="input-group-addon">%</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">招标天数</label>
+                    <div class="input-group col-sm-8">
+                            <select class="form-control" name="days" id="borrow7">
+                                <option>1</option>
+                                <option>3</option>
+                                <option>6</option>
+                                <option>12</option>
+                                <option>24</option>
+                            </select>
+                        <span class="input-group-addon">天</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="borrow7" class="col-sm-2 control-label">借款标题</label>
+                    <div class="input-group col-sm-8">
+                        <input type="text" name="title" class="form-control" id="borrow8" aria-describedby="inputGroupSuccess3Status">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="borrow7" class="col-sm-2 control-label">借款描述</label>
+                    <div class="input-group col-sm-8">
+                        <textarea name="info" class="form-control" rows="3" id="borrow9"></textarea>
+                    </div>
+                </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <button type="submit" class="btn btn-default" style="background:#fa4c4c;color: #fff;border: none">提交申请</button>
+                </div>
+            </div>
+        </form>
+        <div class="col-sm-4">
+            <div class="borrow-charge">
+                <h5>相关费用</h5>
+                <p>利息<span id="lixi">---</span></p>
+                <p>奖金<span>---</span></p>
+                <p>管理费<span id="managemoney">---</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../src/borrowapply.js"></script>

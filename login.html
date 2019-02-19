@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/login.css">
+</head>
+
+<body>
+    <header class="container">
+        <label for=""><img src="./assets/imgs/logoNew.png" alt=""></label>
+        <a href="#">返回首页</a>
+    </header>
+
+    <!-- 登陆页面的内容 -->
+    <section>
+        <div class="loginbox">
+            <h4>账户登陆</h4>
+            <form action="http://172.16.4.241/login.php" method="POST" onsubmit="return checkLogin()">
+                <p><label class="glyphicon glyphicon-user"></label><input type="text" placeholder="输入用户名" name="username"
+                        id="username"></p>
+                <p><label class="glyphicon glyphicon-lock"></label><input type="password" placeholder="输入登陆密码" name="password"></p>
+
+                <!-- 验证码面板 -->
+                <div id="reg_container" class="verification" style="display: none">
+                    <!-- 验证码容器 -->
+                    <!-- 验证码输入框 -->
+                    请输入验证码：<input type="text" id="code_input" value="" /><br>
+                    验证码：<div id="reg_div" style="width: 100px;height: 30px;"></div>
+                    <label id="regCode" style="display: none;color: red;">验证码输入错误</label>
+                </div>
+
+                <!-- 错误面板 -->
+                <div id="errorDiv" style="display: none">
+                    <p>你输入的密码和账户名不匹配，是否忘记密码或忘记会员名</p>
+                </div>
+                <p><span>没有账号？</span><a href="register.html">马上注册</a></p>
+                <button type="submit">立即登陆</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright Reserved 2014-2015@浙江连枝互联网金融信息服务股份有限公司浙ICP备14036569号-1</p>
+    </footer>
+    <script src="./lib/jquery-1.12.4.min.js"></script>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./lib/gVerify.js"></script>
+    <script src="./src/login.js"></script>
+</body>
+
+</html>

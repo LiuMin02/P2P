@@ -1,0 +1,139 @@
+<!-- 引入当前页的样式 -->
+<link rel="stylesheet" href="../dist/css/personal.css">
+<div class="container personal">
+    <div class="row">
+        <div class="col-md-3" id="menu">
+                <div class="list-group panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#">投资项目</a>
+                        </h3>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            借款项目
+                        </h3>
+                    </div>
+                    <a href="#borrowPro" class="list-group-item">借款项目</a>
+                    <a href="#" class="list-group-item">还款明细</a>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">我的账户</h3>
+                    </div>
+                    <a href="#personal" class="list-group-item active">账户信息</a>
+                    <a href="#userinfo" class="list-group-item">信息完善</a>
+                    <a href="#" class="list-group-item">银行卡管理</a>
+                    <a href="#" class="list-group-item">登录记录</a>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">资产详情</h3>
+                    </div>
+                    <a href="#accountFlow" class="list-group-item">账户流水</a>
+                    <a href="#recharge" class="list-group-item">充值明细</a>
+                    <a href="#" class="list-group-item">提现记录</a>
+                    <a href="#" class="list-group-item">收款明细</a>
+                    <div class="panel-heading active">
+                        <h3 class="panel-title">
+                            <a href="#userinfochange">个人资料</a>
+                        </h3>
+                    </div>
+                </div>
+        </div>
+        <!-- 主要内容 -->
+        <div class="col-md-9 perContent">
+            <!-- 头像 -->
+            <div class="head">
+                <img src="../assets/imgs/tx.jpg" alt="">
+                <ul class="headinfo">
+                    <li>昵 称：<span id="nickname">---</span></li>
+                    <li>用户名：<span id="username">---</span></li>
+                    <li>最后登录时间：<span id="lastlogintime">---</span></li>
+                </ul>
+            </div>
+            <!-- 账户 -->
+            <div class="count">
+                <div class="row">
+                    <div class="col-sm-4">总金额：<span id="totalmoney">---</span></div>
+                    <div class="col-sm-4">可用金额：<span id="usablemoney">---</span></div>
+                    <div class="col-sm-4">冻结金额：<span id="blockedmoney">---</span></div>
+                </div>
+                <div class="buttonGroup">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gridSystemModal">账户充值</button>
+                    <button type="button" class="btn btn-danger">账户提现</button>
+                </div>
+            </div>
+
+            <!-- 模态框 -->
+            <div id="gridSystemModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      <h4 class="modal-title" id="gridModalLabel">账户充值</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="row" style="height: 34px;line-height: 34px;">
+                              <div class="col-xs-2 col-sm-3" style="font-size: 18px;">
+                                  充值金额：
+                                </div>
+                                <div class="col-xs-10 col-sm-9">
+                                    <input type="text" class="form-control" id="money">
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" id="chargemoney" data-dismiss="modal">立即充值</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+            <!-- 认证方式 -->
+            <ul class="authentication">
+                <li>
+                    <div class="authentication-type">
+                        <img src="../assets/imgs/shiming.png" alt="">
+                        <div>
+                            <p>实名认证</p>
+                            <p>未认证<a href="#">马上认证</a></p>
+                        </div>
+                    </div>
+                    <p>实名认证之后才能在平台投资</p>
+                </li>
+                <li>
+                    <div class="authentication-type">
+                        <img src="../assets/imgs/shouji.jpg" alt="">
+                        <div>
+                            <p>手机认证</p>
+                            <p>已认证 <a href="#">查看</a></p>
+                        </div>
+                    </div>
+                    <p>可以收到系统操作信息,并增加使用安全性</p>
+                </li>
+                <li>
+                    <div class="authentication-type">
+                        <img src="../assets/imgs/youxiang.jpg" alt="">
+                        <div>
+                            <p>邮箱认证</p>
+                            <p>已认证 <a href="#">查看</a></p>
+                        </div>
+                    </div>
+                    <p>实名认证之后才能在平台投资</p>
+                </li>
+                <li>
+                    <div class="authentication-type">
+                        <img src="../assets/imgs/baozhan.jpg" alt="">
+                        <div>
+                            <p>VIP会员</p>
+                            <p>普通用户 <a href="#">查看</a></p>
+                        </div>
+                    </div>
+                    <p>VIP会员，让你更快捷的投资</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../src/personal.js"></script>

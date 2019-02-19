@@ -1,0 +1,93 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    label{
+        width: 400px;
+       display: block;
+    }
+    a{
+       display: block;
+       width: 100px; 
+    }
+}
+
+section{
+    background: url(../../assets/imgs/loginBanner.png) no-repeat;
+    height: 652px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .loginbox{
+        width: 360px;
+        height: auto;
+        background: #fff;
+        margin-right: 300px;
+        h4{
+            text-align: center;
+        }
+        input{
+            border: none;
+        }
+        p{
+            width: 300px;
+            border: 1px solid #ccc;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 3px;
+            label{
+                display: inline-block;
+                width: 36px;
+                text-align: center;
+                background: #ccc;
+                line-height: 36px;
+            }
+            input{
+                width: 252px;
+                outline: none;
+                text-indent: 20px;
+            }
+            &:nth-of-type(3){
+                border: none;
+                margin-bottom: 0;
+                a{
+                    text-decoration: none;
+                    color: #fea132;
+                }
+            }
+        }
+        button{
+            width: 300px;
+            height: 36px;
+            margin-left: 30px;
+            border: none;
+            color: #fff;
+            background: #e43f47;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+    }
+    #errorDiv{
+        p{
+            border: none;
+            color: red;
+        }
+    }
+    #reg_container{
+        margin-left: 30px;
+        margin-top: 20px;
+        input{
+            border: 1px solid #ccc;
+            height: 30px;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    color: rgb(63, 61, 61);
+    line-height: 100px;
+}

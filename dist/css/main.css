@@ -1,0 +1,190 @@
+.carousel-inner > .item > img {
+  height: 300px;
+}
+.container .singleIntroduce {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 20px 0;
+}
+.container .singleIntroduce span {
+  display: inline-block;
+  height: 80px;
+  width: 98px;
+}
+.container .singleIntroduce p {
+  color: #999;
+}
+.container .singleIntroduce:nth-of-type(1) span {
+  background: url("../../assets/imgs/jinling.png") no-repeat -400px -567px;
+}
+.container .singleIntroduce:nth-of-type(2) span {
+  background: url("../../assets/imgs/jinling.png") no-repeat -700px -567px;
+}
+.container .singleIntroduce:nth-of-type(3) span {
+  background: url("../../assets/imgs/jinling.png") no-repeat -1000px -567px;
+}
+.container .singleIntroduce:nth-of-type(4) span {
+  background: url("../../assets/imgs/jinling.png") no-repeat -1300px -567px;
+}
+.container .title3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fa4c4c;
+  border-bottom: 1px solid #ececec;
+  margin: 20px 0;
+}
+.container .title3 h3 {
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 4px solid #fa4c4c;
+}
+.container .title3 p {
+  margin: 0;
+}
+.container .title3 p a {
+  text-decoration: none;
+  color: #fa4c4c;
+}
+.container .borrowList {
+  margin-bottom: 0;
+}
+.container .imgL {
+  display: block;
+  width: 100%;
+  height: 360px;
+  background: url("../../assets/imgs/jinling.png") -634px 0px;
+}
+.container .welfare {
+  display: flex;
+  flex-direction: column;
+}
+.container .welfare .welfareTop .welfareTopL {
+  height: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .welfare .welfareTop .welfareTopL h5 {
+  font-size: 16px;
+}
+.container .welfare .welfareTop .welfareTopL h5 .fish_detail {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+  background: url('../../assets/imgs/fish_logo.png');
+}
+.container .welfare .welfareTop .welfareTopL h5 a {
+  color: #4d4b4b;
+  text-decoration: none;
+}
+.container .welfare .welfareTop .welfareTopL ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #999;
+}
+.container .welfare .welfareTop .welfareTopL ul li:nth-of-type(1) .newer_time {
+  font-size: 40px;
+  color: #f66;
+  margin-bottom: 0;
+}
+.container .welfare .welfareTop .welfareTopL ul .newer_time {
+  font-size: 26px;
+  color: #000;
+  margin: 9px 0;
+}
+.container .welfare .welfareTop .welfareTopR a {
+  display: inline-block;
+  width: 296px;
+  height: 191px;
+  background: url("../../assets/imgs/jinling.png") 0 -1014px;
+}
+.container .welfare .welfareBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+.container .welfare .welfareBottom a {
+  display: inline-block;
+  width: 335px;
+  height: 149px;
+  margin-left: 15px;
+}
+.container .welfare .welfareBottom a:nth-of-type(1) {
+  background: url("../../assets/imgs/jinling.png") -853px 0px;
+}
+.container .welfare .welfareBottom a:nth-of-type(2) {
+  background: url("../../assets/imgs/jinling.png") -1220px 0px;
+}
+.container .welfare .welfareBottom a:nth-of-type(3) {
+  background: url("../../assets/imgs/jinling.png") 0px -1233px;
+}
+.container .newsMediaL {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .newsMediaL li * {
+  margin: 0;
+  padding: 0;
+}
+.container .newsMediaL li span {
+  display: inline-block;
+  width: 240px;
+  height: 125px;
+}
+.container .newsMediaL li h6 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.container .newsMediaL li p {
+  font-size: 14px;
+}
+.container .newsMediaL li article {
+  max-height: 40px;
+  overflow: hidden;
+  color: #a0a0a0;
+}
+.container .newsMediaL li:nth-of-type(1) span {
+  background: url("../../assets/imgs/jinling.png") -634px -180px;
+}
+.container .newsMediaL li:nth-of-type(2) span {
+  background: url("../../assets/imgs/jinling.png") -408px 0px;
+}
+.container .newsMediaL li:nth-of-type(3) span {
+  background: url("../../assets/imgs/jinling.png") -408px -358px;
+}
+.container .newsMediaR {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.container .newsMediaR li {
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+.container .newsMediaR li a {
+  text-decoration: none;
+  color: #888;
+}
+.container .newsMediaR li a span {
+  margin: 0 8px;
+}
